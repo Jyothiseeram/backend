@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "type":"module",
+  "type": "module",
   "main": "App.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Jyothiseeram/backend/issues"
   },
-  "homepage": "https://github.com/Jyothiseeram/backend#readme"
+  "homepage": "https://github.com/Jyothiseeram/backend#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }

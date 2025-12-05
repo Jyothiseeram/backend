@@ -1,15 +1,11 @@
-import http from "http";
-const server=http.createServer((req,res)=>{
-    if(req.url==="/users"){
-    res.writeHead(200,{"content-type":"text/plain"});
-    res.end(JSON.stringify({name:"Jyothi"}))
-    }
-    else{
-         res.writeHead(200,{"content-type":"text/plain"});
-    res.end("Hello this is from backend");
-    }
+import express from "express";
+const app = express();
+app.get('/users', (req,res)=>{
+    res.send("hello this is from backend");
 })
-
-server.listen(7002,()=>{
-         console.log(`server is running at ${7002}`);
-})
+app.get('/get-users',(req,res)=>{
+    res.send("hello this is from backend");
+    })
+    app.listen(7007,()=>{
+        console.log(`server running at ${7007}`)
+    });
